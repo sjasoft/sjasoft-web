@@ -1,0 +1,31 @@
+[project]
+name = "sjasoft-web"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Samantha Atkins", email = "samantha@conceptwareinc.com" }
+]
+requires-python = ">=3.12"
+dependencies = []
+
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+
+[tool.setuptools.packages.find]
+where = ["src"]
+namespaces = true
+
+[tool.uv.sources]
+sjasoft-utils = { path = "../sjasoft-utils" }
+
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[dependency-groups]
+dev = [
+    "sjasoft-utils",
+]
