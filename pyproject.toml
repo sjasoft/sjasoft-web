@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 authors = [
-    { name = "Samantha Atkins", email = "samantha@conceptwareinc.com" }
+    { name = "Samantha Atkins", email = "samantha@sjasoft.com" }
 ]
 requires-python = ">=3.12"
 dependencies = []
@@ -19,7 +19,7 @@ where = ["src"]
 namespaces = true
 
 [tool.uv.sources]
-sjasoft-utils = { path = "../sjasoft-utils" }
+sjasoft-utils = { path = "../sjasoft-utils", editable = true }
 
 [build-system]
 requires = ["setuptools>=61", "wheel"]
